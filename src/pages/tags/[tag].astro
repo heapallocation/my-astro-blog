@@ -24,11 +24,10 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-const filteredPosts = posts.filter((post) => post.frontmatter.tags?.includes(tag));
 ---
 <BaseLayout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    {filteredPosts.map((post) => <BlogPost title={post.frontmatter.title} url={post.url} />)}
+    {posts.map((post) => <BlogPost title={post.frontmatter.title} url={post.url} />)}
   </ul>
-</BaseLayout    >
+</BaseLayout>
