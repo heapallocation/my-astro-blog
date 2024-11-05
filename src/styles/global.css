@@ -1,13 +1,12 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #f4d738;
   font-family: sans-serif;
 }
 
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
+  max-width: none;
   line-height: 1.5;
 }
 
@@ -18,6 +17,14 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+header {
+  width: 100%;
+  max-width: none; /* Remove max-width constraint */
+  margin: 0; /* Remove margin */
+  padding: 1rem; /* Add padding if needed */
+  background-color: #f8f9fa; /* Example background color */
 }
 
 /* dark styles */

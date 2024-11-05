@@ -1,14 +1,16 @@
 ---
+const { pageTitle } = Astro.props;
 import Hamburger from '../components/hamburger.astro';
 import Navigation from '../components/navigation.astro';
 import Themeicon from '../components/themeicon.astro';
 import ThemeIcon from '../components/themeicon.astro';
 ---
 
-<header>
+<header class="header">
   <nav>
     <Hamburger />
     <Themeicon />
     <Navigation />
   </nav>
+  <h1>{pageTitle}</h1>
 </header>
