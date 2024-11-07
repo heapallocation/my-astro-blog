@@ -7,10 +7,12 @@ import ThemeIcon from '../components/themeicon.astro';
 ---
 
 <header class="header">
-  <nav>
-    <Hamburger />
-    <Themeicon />
+  <div class="top-bar">
+    <Hamburger class="left" />
+    <Themeicon class="right"/>
+  </div>
+  <div class="title-nav" >
+    <h1 class="page-title" >{pageTitle}</h1>
     <Navigation />
-  </nav>
-  <h1>{pageTitle}</h1>
+  </div>
 </header>

@@ -17,6 +17,7 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  display: inline-block;
 }
 
 header {
@@ -25,6 +26,25 @@ header {
   margin: 0; /* Remove margin */
   padding: 1rem; /* Add padding if needed */
   background-color: #f8f9fa; /* Example background color */
+  height: 175px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.page-title {
+  margin-right: 2rem; /* Adjust the margin to move the title closer to the navigation */
 }
 
 /* dark styles */
@@ -54,9 +74,9 @@ html.dark {
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
+  left: 0.5px;
   background-color: #ff9776;
-  display: none;
+  display: inline-block;
   margin: 0;
 }
 
@@ -81,8 +101,7 @@ html.dark {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    display: block;
+    display: inline-block;
     position: static;
     width: auto;
     background: none;
